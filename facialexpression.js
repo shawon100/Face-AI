@@ -1,11 +1,11 @@
 const imageUpload = document.getElementById('imageUpload')
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-  faceapi.nets.ssdMobilenetv1.loadFromUri('/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri(' https://shawon100.github.io/models'),
+  faceapi.nets.faceRecognitionNet.loadFromUri(' https://shawon100.github.io/models'),
+  faceapi.nets.faceLandmark68Net.loadFromUri(' https://shawon100.github.io/models'),
+  faceapi.nets.ssdMobilenetv1.loadFromUri(' https://shawon100.github.io/models'),
+  faceapi.nets.faceExpressionNet.loadFromUri(' https://shawon100.github.io/models')
 ]).then(start)
 
 async function start() {
